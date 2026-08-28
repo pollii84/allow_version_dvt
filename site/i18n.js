@@ -146,6 +146,32 @@
       'login.submit': 'Log in ',
       'login.noAccount': 'No account yet?',
       'login.note': 'SECURE ACCESS FOR ELECTRICAL CONTRACTORS',
+
+      'register.meta.title': 'Create account · ElectricVision Track',
+      'register.meta.description':
+        'Create your ElectricVision Track account and bring quotes, crews, materials, and job progress into one place.',
+      'register.eyebrow': 'Start in minutes',
+      'register.visualTitle1': 'Put your first job',
+      'register.visualTitle2': 'in one clear view.',
+      'register.visualBody':
+        'Every plan includes every feature. Add your crew, import your price list, and send a quote today.',
+      'register.point1': 'Unlimited jobs and quotes',
+      'register.point2': 'Mobile app for field crews',
+      'register.point3': 'No setup fee, cancel anytime',
+      'register.formEyebrow': 'New account',
+      'register.title': 'Create account.',
+      'register.lede':
+        'Set up your company workspace. You can invite the rest of the team afterwards.',
+      'register.company': 'Company name',
+      'register.companyPlaceholder': 'ElectricVision SRL',
+      'register.name': 'Full name',
+      'register.namePlaceholder': 'Alex Popescu',
+      'register.password': 'Password',
+      'register.passwordHint': 'At least 8 characters',
+      'register.terms': 'I agree to the terms of service',
+      'register.submit': 'Create account ',
+      'register.haveAccount': 'Already have an account?',
+      'register.note': '14 DAYS OF FULL ACCESS, NO CARD REQUIRED',
     },
 
     ro: {
@@ -290,6 +316,32 @@
       'login.submit': 'Intră în cont ',
       'login.noAccount': 'Nu ai încă un cont?',
       'login.note': 'ACCES SECURIZAT PENTRU ANTREPRENORII ELECTRICIENI',
+
+      'register.meta.title': 'Creează cont · ElectricVision Track',
+      'register.meta.description':
+        'Creează-ți contul ElectricVision Track și adu ofertele, echipele, materialele și progresul lucrărilor într-un singur loc.',
+      'register.eyebrow': 'Începe în câteva minute',
+      'register.visualTitle1': 'Pune prima lucrare',
+      'register.visualTitle2': 'într-o vedere clară.',
+      'register.visualBody':
+        'Fiecare plan include toate funcționalitățile. Adaugă echipa, importă lista de prețuri și trimite o ofertă azi.',
+      'register.point1': 'Lucrări și oferte nelimitate',
+      'register.point2': 'Aplicație mobilă pentru echipele din teren',
+      'register.point3': 'Fără taxă de configurare, anulezi oricând',
+      'register.formEyebrow': 'Cont nou',
+      'register.title': 'Creează cont.',
+      'register.lede':
+        'Configurează spațiul de lucru al companiei. Poți invita restul echipei ulterior.',
+      'register.company': 'Numele companiei',
+      'register.companyPlaceholder': 'ElectricVision SRL',
+      'register.name': 'Nume complet',
+      'register.namePlaceholder': 'Alex Popescu',
+      'register.password': 'Parolă',
+      'register.passwordHint': 'Minimum 8 caractere',
+      'register.terms': 'Accept termenii și condițiile',
+      'register.submit': 'Creează cont ',
+      'register.haveAccount': 'Ai deja un cont?',
+      'register.note': '14 ZILE DE ACCES COMPLET, FĂRĂ CARD',
     },
   }
 
