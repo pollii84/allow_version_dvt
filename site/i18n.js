@@ -126,6 +126,26 @@
       'footer.privacy': 'Privacy policy',
       'footer.terms': 'Terms of service',
       'footer.contact': 'Contact',
+
+      'login.meta.title': 'Log in · ElectricVision Track',
+      'login.meta.description':
+        'Log in to ElectricVision Track to manage quotes, crews, materials, and job progress.',
+      'login.eyebrow': 'Welcome back',
+      'login.visualTitle1': 'Every job,',
+      'login.visualTitle2': 'still in clear view.',
+      'login.visualBody':
+        "Pick up where your crews left off: live job progress, approved quotes, and today's assignments.",
+      'login.formEyebrow': 'Account access',
+      'login.title': 'Log in.',
+      'login.lede': 'Use the email address your company account is registered with.',
+      'login.email': 'Work email',
+      'login.emailPlaceholder': 'name@company.com',
+      'login.password': 'Password',
+      'login.remember': 'Keep me signed in',
+      'login.forgot': 'Forgot password?',
+      'login.submit': 'Log in ',
+      'login.noAccount': 'No account yet?',
+      'login.note': 'SECURE ACCESS FOR ELECTRICAL CONTRACTORS',
     },
 
     ro: {
@@ -250,6 +270,26 @@
       'footer.privacy': 'Politica de confidențialitate',
       'footer.terms': 'Termeni și condiții',
       'footer.contact': 'Contact',
+
+      'login.meta.title': 'Autentificare · ElectricVision Track',
+      'login.meta.description':
+        'Autentifică-te în ElectricVision Track pentru a gestiona ofertele, echipele, materialele și progresul lucrărilor.',
+      'login.eyebrow': 'Bine ai revenit',
+      'login.visualTitle1': 'Fiecare lucrare,',
+      'login.visualTitle2': 'tot la vedere.',
+      'login.visualBody':
+        'Continuă de unde au rămas echipele tale: progresul lucrărilor în timp real, ofertele aprobate și sarcinile de azi.',
+      'login.formEyebrow': 'Acces în cont',
+      'login.title': 'Autentificare.',
+      'login.lede': 'Folosește adresa de e-mail cu care este înregistrat contul companiei.',
+      'login.email': 'E-mail de serviciu',
+      'login.emailPlaceholder': 'nume@companie.ro',
+      'login.password': 'Parolă',
+      'login.remember': 'Ține-mă autentificat',
+      'login.forgot': 'Ai uitat parola?',
+      'login.submit': 'Intră în cont ',
+      'login.noAccount': 'Nu ai încă un cont?',
+      'login.note': 'ACCES SECURIZAT PENTRU ANTREPRENORII ELECTRICIENI',
     },
   }
 
@@ -307,9 +347,17 @@
   }
 
   function updateCalculator() {
-    var workers = Math.max(1, Number(document.getElementById('ev-workers').value) || 0)
-    var rate = Math.max(1, Number(document.getElementById('ev-rate').value) || 0)
-    var hours = Math.max(1, Number(document.getElementById('ev-hours').value) || 0)
+    var workersInput = document.getElementById('ev-workers')
+    var rateInput = document.getElementById('ev-rate')
+    var hoursInput = document.getElementById('ev-hours')
+
+    if (!workersInput || !rateInput || !hoursInput) {
+      return
+    }
+
+    var workers = Math.max(1, Number(workersInput.value) || 0)
+    var rate = Math.max(1, Number(rateInput.value) || 0)
+    var hours = Math.max(1, Number(hoursInput.value) || 0)
 
     var annualPayroll = workers * rate * hours * 12
     var currency = dict()['calc.currency']
@@ -353,6 +401,16 @@
         node.setAttribute('aria-label', value)
       }
     })
+
+    Array.prototype.forEach.call(
+      document.querySelectorAll('[data-i18n-placeholder]'),
+      function (node) {
+        var value = dictionary[node.getAttribute('data-i18n-placeholder')]
+        if (typeof value === 'string') {
+          node.setAttribute('placeholder', value)
+        }
+      }
+    )
 
     Array.prototype.forEach.call(document.querySelectorAll('.ev-lang button'), function (button) {
       button.setAttribute('aria-pressed', String(button.getAttribute('data-lang') === currentLang))

@@ -234,3 +234,39 @@ body.ev-page { margin: 0; color: var(--ev-ink); background: var(--ev-paper); fon
 .ev-lang button:hover { color: var(--ev-ink); }
 .ev-lang button[aria-pressed="true"] { background: var(--ev-ink); color: var(--ev-paper); }
 .ev-nav-actions { gap: 20px; }
+
+/* Login */
+.ev-auth { display: grid; grid-template-columns: 1.05fr 1fr; min-height: calc(100vh - 82px); }
+.ev-auth-visual { position: relative; overflow: hidden; display: flex; align-items: flex-end; padding: 94px max(28px, calc((100vw - 1240px) / 2)) 94px 0; background: #09131f; }
+.ev-auth-visual .ev-light-installation::after { background: linear-gradient(90deg, rgba(4,13,22,.9) 0%, rgba(4,13,22,.6) 45%, rgba(4,13,22,.1) 100%); }
+.ev-auth-visual-copy { position: relative; z-index: 2; max-width: 430px; padding-left: max(28px, calc((100vw - 1240px) / 2)); }
+.ev-auth-visual h2 { color: white; font-size: clamp(34px, 3.4vw, 48px); letter-spacing: -2.4px; line-height: 1.04; margin: 0; font-weight: 800; }
+.ev-auth-visual h2 em { font-weight: 500; color: #7ff0bb; font-style: normal; }
+.ev-auth-visual p { color: #cddcd6; font-size: 15px; line-height: 1.6; margin: 20px 0 0; }
+.ev-auth-visual .ev-light-caption { left: max(28px, calc((100vw - 1240px) / 2)); right: 78px; }
+
+.ev-auth-form { display: flex; align-items: center; justify-content: center; padding: 94px 78px; background: var(--ev-paper); }
+.ev-auth-card { width: 100%; max-width: 400px; }
+.ev-auth-card h1 { font-size: clamp(32px, 3vw, 42px); letter-spacing: -2px; line-height: 1.05; margin: 0 0 14px; font-weight: 800; }
+.ev-auth-card > p { color: var(--ev-muted); font-size: 15px; margin: 0 0 34px; }
+.ev-field { display: block; margin-bottom: 22px; }
+.ev-field > span { display: block; color: var(--ev-muted); font-size: 11px; letter-spacing: .2px; margin-bottom: 7px; text-transform: uppercase; font-family: 'DM Mono', monospace; }
+.ev-field input { width: 100%; background: transparent; border: 0; border-bottom: 1px solid var(--ev-line); color: var(--ev-ink); padding: 10px 0; outline: none; font: 600 18px Manrope, sans-serif; }
+.ev-field input:focus { border-bottom-color: #157761; }
+.ev-field input::placeholder { color: #a9b3ad; font-weight: 500; }
+.ev-auth-row { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin: 4px 0 30px; }
+.ev-remember { display: inline-flex; align-items: center; gap: 9px; color: var(--ev-muted); font-size: 13px; font-weight: 600; cursor: pointer; }
+.ev-remember input { width: 15px; height: 15px; accent-color: #147a62; margin: 0; }
+.ev-auth-link { color: #157761; font-size: 13px; font-weight: 700; text-decoration: none; }
+.ev-auth-link:hover { color: #0f624e; }
+.ev-auth-card .ev-button { width: 100%; justify-content: center; gap: 12px; padding: 16px 20px; }
+.ev-auth-alt { display: flex; align-items: center; gap: 7px; flex-wrap: wrap; color: var(--ev-muted); font-size: 13px; font-weight: 600; margin: 24px 0 0; }
+.ev-auth-note { color: #7d8a83; font: 10px 'DM Mono', monospace; letter-spacing: .6px; text-transform: uppercase; margin: 40px 0 0; }
+
+@media (max-width: 1068px) {
+  .ev-auth { grid-template-columns: 1fr; min-height: 0; }
+  .ev-auth-visual { min-height: 380px; padding: 60px 24px; align-items: flex-end; }
+  .ev-auth-visual-copy { padding-left: 0; }
+  .ev-auth-visual .ev-light-caption { left: 24px; right: 24px; }
+  .ev-auth-form { padding: 60px 24px 76px; justify-content: center; }
+}
