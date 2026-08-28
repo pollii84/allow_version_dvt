@@ -25,69 +25,71 @@
     </header>
 
     <main class="ev-auth">
-      <div class="ev-light-installation" data-i18n-aria="hero.lights" aria-label="Animated installation of architectural lights">
-        <div class="ev-light-grid"></div>
-        <i class="ev-beam ev-beam-one"></i>
-        <i class="ev-beam ev-beam-two"></i>
-        <i class="ev-beam ev-beam-three"></i>
-        <div class="ev-fixture ev-fixture-one"><i></i></div>
-        <div class="ev-fixture ev-fixture-two"><i></i></div>
-        <div class="ev-fixture ev-fixture-three"><i></i></div>
-      </div>
+      <section class="ev-auth-visual">
+        <div class="ev-light-installation" data-i18n-aria="hero.lights" aria-label="Animated installation of architectural lights">
+          <div class="ev-light-grid"></div>
+          <i class="ev-beam ev-beam-one"></i>
+          <i class="ev-beam ev-beam-two"></i>
+          <i class="ev-beam ev-beam-three"></i>
+          <div class="ev-fixture ev-fixture-one"><i></i></div>
+          <div class="ev-fixture ev-fixture-two"><i></i></div>
+          <div class="ev-fixture ev-fixture-three"><i></i></div>
+        </div>
+        <div class="ev-auth-visual-copy">
+          <p class="ev-eyebrow" data-i18n="register.eyebrow">Start in minutes</p>
+          <h2 data-i18n="register.visualTitle1">Put your first job<br><em data-i18n="register.visualTitle2">in one clear view.</em></h2>
+          <p data-i18n="register.visualBody">Every plan includes every feature. Add your crew, import your price list, and send a quote today.</p>
+          <ul class="ev-auth-points">
+            <li data-i18n="register.point1">Unlimited jobs and quotes</li>
+            <li data-i18n="register.point2">Mobile app for field crews</li>
+            <li data-i18n="register.point3">No setup fee, cancel anytime</li>
+          </ul>
+        </div>
+        <div class="ev-light-caption"><span data-i18n="hero.caption">LIGHTING THE WORK AHEAD</span><b>03 / 03</b></div>
+      </section>
 
-      <div class="ev-auth-copy">
-        <p class="ev-eyebrow" data-i18n="register.eyebrow">Start in minutes</p>
-        <h1 data-i18n="register.visualTitle1">Put your first job<br><em data-i18n="register.visualTitle2">in one clear view.</em></h1>
-        <p data-i18n="register.visualBody">Every plan includes every feature. Add your crew, import your price list, and send a quote today.</p>
-        <ul class="ev-auth-points">
-          <li data-i18n="register.point1">Unlimited jobs and quotes</li>
-          <li data-i18n="register.point2">Mobile app for field crews</li>
-          <li data-i18n="register.point3">No setup fee, cancel anytime</li>
-        </ul>
-      </div>
+      <section class="ev-auth-form">
+        <div class="ev-auth-card">
+          <p class="ev-eyebrow" data-i18n="register.formEyebrow">New account</p>
+          <h1 data-i18n="register.title">Create account.</h1>
+          <p data-i18n="register.lede">Set up your company workspace. You can invite the rest of the team afterwards.</p>
 
-      <div class="ev-auth-panel">
-        <p class="ev-eyebrow" data-i18n="register.formEyebrow">New account</p>
-        <h2 data-i18n="register.title">Create account.</h2>
-        <p data-i18n="register.lede">Set up your company workspace. You can invite the rest of the team afterwards.</p>
-
-        <form method="post" action="https://app.dimensionvisiontrack.com/register">
-          <label class="ev-field">
-            <span data-i18n="register.company">Company name</span>
-            <input type="text" name="company" autocomplete="organization" required data-i18n-placeholder="register.companyPlaceholder" placeholder="DimensionVision SRL">
-          </label>
-          <label class="ev-field">
-            <span data-i18n="register.name">Full name</span>
-            <input type="text" name="name" autocomplete="name" required data-i18n-placeholder="register.namePlaceholder" placeholder="Alex Popescu">
-          </label>
-          <label class="ev-field">
-            <span data-i18n="login.email">Work email</span>
-            <input type="email" name="email" autocomplete="email" required data-i18n-placeholder="login.emailPlaceholder" placeholder="name@company.com">
-          </label>
-          <label class="ev-field">
-            <span data-i18n="register.password">Password</span>
-            <input type="password" name="password" autocomplete="new-password" minlength="8" required placeholder="••••••••">
-            <b class="ev-field-hint" data-i18n="register.passwordHint">At least 8 characters</b>
-          </label>
-
-          <div class="ev-auth-row ev-auth-row-terms">
-            <label class="ev-remember">
-              <input type="checkbox" name="terms" required>
-              <span data-i18n="register.terms">I agree to the terms of service</span>
+          <form method="post" action="/register">
+            <label class="ev-field">
+              <span data-i18n="register.company">Company name</span>
+              <input type="text" name="company" autocomplete="organization" required data-i18n-placeholder="register.companyPlaceholder" placeholder="DimensionVision SRL">
             </label>
-          </div>
+            <label class="ev-field">
+              <span data-i18n="register.name">Full name</span>
+              <input type="text" name="name" autocomplete="name" required data-i18n-placeholder="register.namePlaceholder" placeholder="Alex Popescu">
+            </label>
+            <label class="ev-field">
+              <span data-i18n="login.email">Work email</span>
+              <input type="email" name="email" autocomplete="email" required data-i18n-placeholder="login.emailPlaceholder" placeholder="name@company.com">
+            </label>
+            <label class="ev-field">
+              <span data-i18n="register.password">Password</span>
+              <input type="password" name="password" autocomplete="new-password" minlength="8" required placeholder="••••••••">
+              <b class="ev-field-hint" data-i18n="register.passwordHint">At least 8 characters</b>
+            </label>
 
-          <button class="ev-button" type="submit" data-i18n="register.submit">Create account <span>&#8594;</span></button>
-        </form>
+            <div class="ev-auth-row ev-auth-row-terms">
+              <label class="ev-remember">
+                <input type="checkbox" name="terms" required>
+                <span data-i18n="register.terms">I agree to the terms of service</span>
+              </label>
+            </div>
 
-        <p class="ev-auth-alt">
-          <span data-i18n="register.haveAccount">Already have an account?</span>
-          <a class="ev-auth-link" href="/login" data-i18n="nav.login">Log in</a>
-        </p>
-        <p class="ev-auth-note" data-i18n="register.note">14 DAYS OF FULL ACCESS, NO CARD REQUIRED</p>
-      </div>
+            <button class="ev-button" type="submit" data-i18n="register.submit">Create account <span>&#8594;</span></button>
+          </form>
 
-      <div class="ev-light-caption"><span data-i18n="hero.caption">LIGHTING THE WORK AHEAD</span><b>03 / 03</b></div>
+          <p class="ev-auth-alt">
+            <span data-i18n="register.haveAccount">Already have an account?</span>
+            <a class="ev-auth-link" href="/login" data-i18n="nav.login">Log in</a>
+          </p>
+          <p class="ev-auth-note" data-i18n="register.note">14 DAYS OF FULL ACCESS, NO CARD REQUIRED</p>
+        </div>
+      </section>
     </main>
 
     <footer class="ev-footer">
