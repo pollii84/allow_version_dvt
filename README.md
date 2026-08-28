@@ -1,6 +1,6 @@
-# ElectricVision Track
+# DimensionVision Track
 
-Marketing site for ElectricVision Track, a construction management platform for electrical contractors.
+Marketing site for DimensionVision Track, a construction management platform for electrical contractors.
 
 ## Run
 

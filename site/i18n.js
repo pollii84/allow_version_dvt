@@ -6,11 +6,11 @@
 
   var translations = {
     en: {
-      'meta.title': 'ElectricVision Track',
+      'meta.title': 'DimensionVision Track',
       'meta.description':
-        'ElectricVision Track brings quotes, crews, materials, and job progress into one place built for electrical contractors.',
+        'DimensionVision Track brings quotes, crews, materials, and job progress into one place built for electrical contractors.',
 
-      'brand.aria': 'ElectricVision Track home',
+      'brand.aria': 'DimensionVision Track home',
       'nav.aria': 'Main navigation',
       'lang.aria': 'Language',
       'nav.features': 'Features',
@@ -23,7 +23,7 @@
       'hero.title1': 'Run every job',
       'hero.title2': 'with clarity.',
       'hero.lede':
-        'ElectricVision Track brings quotes, crews, materials, and job progress into one place built for electrical contractors.',
+        'DimensionVision Track brings quotes, crews, materials, and job progress into one place built for electrical contractors.',
       'hero.primary': 'Get started ',
       'hero.secondary': 'Explore the platform ',
       'hero.lights': 'Animated installation of architectural lights',
@@ -79,7 +79,7 @@
       'calc.savingsLabel': 'Estimated annual savings',
       'calc.hoursSaved': 'Hours saved each year',
       'calc.hoursUnit': 'hrs',
-      'calc.losses': 'Potential annual losses without EV Track',
+      'calc.losses': 'Potential annual losses without DV Track',
       'calc.cta': 'Build your workflow ',
       'calc.breakdown': 'Where operational costs add up',
       'calc.line1': 'Admin & overhead costs',
@@ -120,16 +120,16 @@
       'final.eyebrow': 'Ready when you are',
       'final.title1': 'Put the whole job',
       'final.title2': 'in one clear view.',
-      'final.cta': 'Start with ElectricVision ',
+      'final.cta': 'Start with DimensionVision ',
 
-      'footer.rights': '© 2026 ElectricVision Track. All rights reserved.',
+      'footer.rights': '© 2026 DimensionVision Track. All rights reserved.',
       'footer.privacy': 'Privacy policy',
       'footer.terms': 'Terms of service',
       'footer.contact': 'Contact',
 
-      'login.meta.title': 'Log in · ElectricVision Track',
+      'login.meta.title': 'Log in · DimensionVision Track',
       'login.meta.description':
-        'Log in to ElectricVision Track to manage quotes, crews, materials, and job progress.',
+        'Log in to DimensionVision Track to manage quotes, crews, materials, and job progress.',
       'login.eyebrow': 'Welcome back',
       'login.visualTitle1': 'Every job,',
       'login.visualTitle2': 'still in clear view.',
@@ -144,12 +144,14 @@
       'login.remember': 'Keep me signed in',
       'login.forgot': 'Forgot password?',
       'login.submit': 'Log in ',
+      'back.label': 'Back',
+      'back.aria': 'Back to home',
       'login.noAccount': 'No account yet?',
       'login.note': 'SECURE ACCESS FOR ELECTRICAL CONTRACTORS',
 
-      'register.meta.title': 'Create account · ElectricVision Track',
+      'register.meta.title': 'Create account · DimensionVision Track',
       'register.meta.description':
-        'Create your ElectricVision Track account and bring quotes, crews, materials, and job progress into one place.',
+        'Create your DimensionVision Track account and bring quotes, crews, materials, and job progress into one place.',
       'register.eyebrow': 'Start in minutes',
       'register.visualTitle1': 'Put your first job',
       'register.visualTitle2': 'in one clear view.',
@@ -163,7 +165,7 @@
       'register.lede':
         'Set up your company workspace. You can invite the rest of the team afterwards.',
       'register.company': 'Company name',
-      'register.companyPlaceholder': 'ElectricVision SRL',
+      'register.companyPlaceholder': 'DimensionVision SRL',
       'register.name': 'Full name',
       'register.namePlaceholder': 'Alex Popescu',
       'register.password': 'Password',
@@ -175,11 +177,11 @@
     },
 
     ro: {
-      'meta.title': 'ElectricVision Track',
+      'meta.title': 'DimensionVision Track',
       'meta.description':
-        'ElectricVision Track aduce ofertele, echipele, materialele și progresul lucrărilor într-un singur loc, construit pentru antreprenorii electricieni.',
+        'DimensionVision Track aduce ofertele, echipele, materialele și progresul lucrărilor într-un singur loc, construit pentru antreprenorii electricieni.',
 
-      'brand.aria': 'Pagina principală ElectricVision Track',
+      'brand.aria': 'Pagina principală DimensionVision Track',
       'nav.aria': 'Navigație principală',
       'lang.aria': 'Limbă',
       'nav.features': 'Funcționalități',
@@ -192,7 +194,7 @@
       'hero.title1': 'Fiecare lucrare,',
       'hero.title2': 'cu claritate.',
       'hero.lede':
-        'ElectricVision Track aduce ofertele, echipele, materialele și progresul lucrărilor într-un singur loc, construit pentru antreprenorii electricieni.',
+        'DimensionVision Track aduce ofertele, echipele, materialele și progresul lucrărilor într-un singur loc, construit pentru antreprenorii electricieni.',
       'hero.primary': 'Începe acum ',
       'hero.secondary': 'Explorează platforma ',
       'hero.lights': 'Instalație animată de corpuri de iluminat arhitecturale',
@@ -248,7 +250,7 @@
       'calc.savingsLabel': 'Economii anuale estimate',
       'calc.hoursSaved': 'Ore economisite în fiecare an',
       'calc.hoursUnit': 'ore',
-      'calc.losses': 'Pierderi anuale posibile fără EV Track',
+      'calc.losses': 'Pierderi anuale posibile fără DV Track',
       'calc.cta': 'Construiește fluxul tău ',
       'calc.breakdown': 'Unde se adună costurile operaționale',
       'calc.line1': 'Costuri administrative și indirecte',
@@ -290,16 +292,16 @@
       'final.eyebrow': 'Gata când ești tu',
       'final.title1': 'Pune toată lucrarea',
       'final.title2': 'într-o singură vedere clară.',
-      'final.cta': 'Începe cu ElectricVision ',
+      'final.cta': 'Începe cu DimensionVision ',
 
-      'footer.rights': '© 2026 ElectricVision Track. Toate drepturile rezervate.',
+      'footer.rights': '© 2026 DimensionVision Track. Toate drepturile rezervate.',
       'footer.privacy': 'Politica de confidențialitate',
       'footer.terms': 'Termeni și condiții',
       'footer.contact': 'Contact',
 
-      'login.meta.title': 'Autentificare · ElectricVision Track',
+      'login.meta.title': 'Autentificare · DimensionVision Track',
       'login.meta.description':
-        'Autentifică-te în ElectricVision Track pentru a gestiona ofertele, echipele, materialele și progresul lucrărilor.',
+        'Autentifică-te în DimensionVision Track pentru a gestiona ofertele, echipele, materialele și progresul lucrărilor.',
       'login.eyebrow': 'Bine ai revenit',
       'login.visualTitle1': 'Fiecare lucrare,',
       'login.visualTitle2': 'tot la vedere.',
@@ -314,12 +316,14 @@
       'login.remember': 'Ține-mă autentificat',
       'login.forgot': 'Ai uitat parola?',
       'login.submit': 'Intră în cont ',
+      'back.label': 'Înapoi',
+      'back.aria': 'Înapoi la pagina principală',
       'login.noAccount': 'Nu ai încă un cont?',
       'login.note': 'ACCES SECURIZAT PENTRU ANTREPRENORII ELECTRICIENI',
 
-      'register.meta.title': 'Creează cont · ElectricVision Track',
+      'register.meta.title': 'Creează cont · DimensionVision Track',
       'register.meta.description':
-        'Creează-ți contul ElectricVision Track și adu ofertele, echipele, materialele și progresul lucrărilor într-un singur loc.',
+        'Creează-ți contul DimensionVision Track și adu ofertele, echipele, materialele și progresul lucrărilor într-un singur loc.',
       'register.eyebrow': 'Începe în câteva minute',
       'register.visualTitle1': 'Pune prima lucrare',
       'register.visualTitle2': 'într-o vedere clară.',
@@ -333,7 +337,7 @@
       'register.lede':
         'Configurează spațiul de lucru al companiei. Poți invita restul echipei ulterior.',
       'register.company': 'Numele companiei',
-      'register.companyPlaceholder': 'ElectricVision SRL',
+      'register.companyPlaceholder': 'DimensionVision SRL',
       'register.name': 'Nume complet',
       'register.namePlaceholder': 'Alex Popescu',
       'register.password': 'Parolă',

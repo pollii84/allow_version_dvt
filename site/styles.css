@@ -277,3 +277,21 @@ body.ev-page { margin: 0; color: var(--ev-ink); background: var(--ev-paper); fon
 @media (max-width: 734px) {
   .ev-auth .ev-fixture { display: none; }
 }
+
+/* Login page without header */
+.ev-auth-bare { min-height: 100vh; padding-top: 126px; }
+.ev-auth-top { position: absolute; z-index: 3; top: 30px; right: max(28px, calc((100vw - 1240px) / 2)); left: max(28px, calc((100vw - 1240px) / 2)); display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.ev-back { display: inline-flex; align-items: center; gap: 10px; border: 1px solid #405163; background: rgba(11,26,38,.6); padding: 9px 15px; color: #d5e3dd; text-decoration: none; }
+.ev-back span { color: var(--ev-mint); font-size: 15px; line-height: 1; }
+.ev-back b { font: 700 12px Manrope, sans-serif; letter-spacing: .2px; }
+.ev-back:hover { border-color: var(--ev-mint); color: white; }
+.ev-lang-dark { border-color: #405163; }
+.ev-lang-dark button { color: #b5c0bd; }
+.ev-lang-dark button + button { border-left-color: #405163; }
+.ev-lang-dark button:hover { color: white; }
+.ev-lang-dark button[aria-pressed="true"] { background: var(--ev-mint); color: #09131f; }
+
+@media (max-width: 1068px) {
+  .ev-auth-bare { padding-top: 104px; }
+  .ev-auth-top { top: 22px; right: 24px; left: 24px; }
+}
