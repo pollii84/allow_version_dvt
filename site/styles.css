@@ -278,19 +278,26 @@ body.ev-page { margin: 0; color: var(--ev-ink); background: var(--ev-paper); fon
 .ev-auth-row-terms { justify-content: flex-start; }
 .ev-nav-actions .ev-login-persist { display: inline-flex; }
 
-/* Login page without the site header */
+/* Login and create account: no header or footer, only a back button and the logo */
 .ev-auth-bare { position: relative; min-height: 100vh; }
-.ev-auth-bare .ev-auth-visual { padding-top: 126px; }
-.ev-auth-bare .ev-auth-form { padding-top: 126px; }
-.ev-back { position: absolute; z-index: 3; top: 30px; left: max(28px, calc((100vw - 1240px) / 2)); display: inline-flex; align-items: center; gap: 10px; border: 1px solid rgba(206,213,207,.35); background: rgba(9,19,31,.55); padding: 9px 15px; color: #e6efe9; text-decoration: none; }
+.ev-auth-bare .ev-auth-visual { padding-top: 132px; }
+.ev-auth-bare .ev-auth-form { padding-top: 132px; }
+.ev-auth-top { position: absolute; z-index: 3; top: 30px; left: max(28px, calc((100vw - 1240px) / 2)); display: flex; align-items: center; gap: 20px; }
+.ev-back { display: inline-flex; align-items: center; gap: 10px; border: 1px solid rgba(206,213,207,.35); background: rgba(9,19,31,.55); padding: 9px 15px; color: #e6efe9; text-decoration: none; }
 .ev-back span { color: var(--ev-mint); font-size: 15px; line-height: 1; }
 .ev-back b { font: 700 12px Manrope, sans-serif; letter-spacing: .2px; }
 .ev-back:hover { border-color: var(--ev-mint); color: white; }
-.ev-lang-floating { position: absolute; z-index: 3; top: 30px; right: max(28px, calc((100vw - 1240px) / 2)); background: var(--ev-paper); }
+.ev-brand-dark { color: #eef3f0; }
+.ev-brand-dark span { background: var(--ev-paper); color: #10201b; }
+.ev-brand-dark b { color: var(--ev-mint); }
 
 @media (max-width: 1068px) {
-  .ev-auth-bare .ev-auth-visual { padding-top: 104px; }
+  .ev-auth-bare .ev-auth-visual { padding-top: 116px; }
   .ev-auth-bare .ev-auth-form { padding-top: 60px; }
-  .ev-back { top: 22px; left: 24px; }
-  .ev-lang-floating { top: 22px; right: 24px; }
+  .ev-auth-top { top: 22px; left: 24px; }
+}
+
+@media (max-width: 560px) {
+  .ev-auth-top { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .ev-auth-bare .ev-auth-visual { padding-top: 150px; }
 }
