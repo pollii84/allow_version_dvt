@@ -25,58 +25,56 @@
     </header>
 
     <main class="ev-auth">
-      <section class="ev-auth-visual">
-        <div class="ev-light-installation" data-i18n-aria="hero.lights" aria-label="Animated installation of architectural lights">
-          <div class="ev-light-grid"></div>
-          <i class="ev-beam ev-beam-one"></i>
-          <i class="ev-beam ev-beam-two"></i>
-          <i class="ev-beam ev-beam-three"></i>
-          <div class="ev-fixture ev-fixture-one"><i></i></div>
-          <div class="ev-fixture ev-fixture-two"><i></i></div>
-          <div class="ev-fixture ev-fixture-three"><i></i></div>
-        </div>
-        <div class="ev-auth-visual-copy">
-          <p class="ev-eyebrow" data-i18n="login.eyebrow">Welcome back</p>
-          <h2 data-i18n="login.visualTitle1">Every job,<br><em data-i18n="login.visualTitle2">still in clear view.</em></h2>
-          <p data-i18n="login.visualBody">Pick up where your crews left off: live job progress, approved quotes, and today's assignments.</p>
-        </div>
-        <div class="ev-light-caption"><span data-i18n="hero.caption">LIGHTING THE WORK AHEAD</span><b>02 / 03</b></div>
-      </section>
+      <div class="ev-light-installation" data-i18n-aria="hero.lights" aria-label="Animated installation of architectural lights">
+        <div class="ev-light-grid"></div>
+        <i class="ev-beam ev-beam-one"></i>
+        <i class="ev-beam ev-beam-two"></i>
+        <i class="ev-beam ev-beam-three"></i>
+        <div class="ev-fixture ev-fixture-one"><i></i></div>
+        <div class="ev-fixture ev-fixture-two"><i></i></div>
+        <div class="ev-fixture ev-fixture-three"><i></i></div>
+      </div>
 
-      <section class="ev-auth-form">
-        <div class="ev-auth-card">
-          <p class="ev-eyebrow" data-i18n="login.formEyebrow">Account access</p>
-          <h1 data-i18n="login.title">Log in.</h1>
-          <p data-i18n="login.lede">Use the email address your company account is registered with.</p>
+      <div class="ev-auth-copy">
+        <p class="ev-eyebrow" data-i18n="login.eyebrow">Welcome back</p>
+        <h1 data-i18n="login.visualTitle1">Every job,<br><em data-i18n="login.visualTitle2">still in clear view.</em></h1>
+        <p data-i18n="login.visualBody">Pick up where your crews left off: live job progress, approved quotes, and today's assignments.</p>
+      </div>
 
-          <form method="post" action="https://app.dimensionvisiontrack.com/login">
-            <label class="ev-field">
-              <span data-i18n="login.email">Work email</span>
-              <input type="email" name="email" autocomplete="email" required data-i18n-placeholder="login.emailPlaceholder" placeholder="name@company.com">
+      <div class="ev-auth-panel">
+        <p class="ev-eyebrow" data-i18n="login.formEyebrow">Account access</p>
+        <h2 data-i18n="login.title">Log in.</h2>
+        <p data-i18n="login.lede">Use the email address your company account is registered with.</p>
+
+        <form method="post" action="https://app.dimensionvisiontrack.com/login">
+          <label class="ev-field">
+            <span data-i18n="login.email">Work email</span>
+            <input type="email" name="email" autocomplete="email" required data-i18n-placeholder="login.emailPlaceholder" placeholder="name@company.com">
+          </label>
+          <label class="ev-field">
+            <span data-i18n="login.password">Password</span>
+            <input type="password" name="password" autocomplete="current-password" required placeholder="••••••••">
+          </label>
+
+          <div class="ev-auth-row">
+            <label class="ev-remember">
+              <input type="checkbox" name="remember">
+              <span data-i18n="login.remember">Keep me signed in</span>
             </label>
-            <label class="ev-field">
-              <span data-i18n="login.password">Password</span>
-              <input type="password" name="password" autocomplete="current-password" required placeholder="••••••••">
-            </label>
+            <a class="ev-auth-link" href="https://app.dimensionvisiontrack.com/forgot-password" data-i18n="login.forgot">Forgot password?</a>
+          </div>
 
-            <div class="ev-auth-row">
-              <label class="ev-remember">
-                <input type="checkbox" name="remember">
-                <span data-i18n="login.remember">Keep me signed in</span>
-              </label>
-              <a class="ev-auth-link" href="https://app.dimensionvisiontrack.com/forgot-password" data-i18n="login.forgot">Forgot password?</a>
-            </div>
+          <button class="ev-button" type="submit" data-i18n="login.submit">Log in <span>&#8594;</span></button>
+        </form>
 
-            <button class="ev-button" type="submit" data-i18n="login.submit">Log in <span>&#8594;</span></button>
-          </form>
+        <p class="ev-auth-alt">
+          <span data-i18n="login.noAccount">No account yet?</span>
+          <a class="ev-auth-link" href="/register" data-i18n="nav.cta">Create account</a>
+        </p>
+        <p class="ev-auth-note" data-i18n="login.note">SECURE ACCESS FOR ELECTRICAL CONTRACTORS</p>
+      </div>
 
-          <p class="ev-auth-alt">
-            <span data-i18n="login.noAccount">No account yet?</span>
-            <a class="ev-auth-link" href="/register" data-i18n="nav.cta">Create account</a>
-          </p>
-          <p class="ev-auth-note" data-i18n="login.note">SECURE ACCESS FOR ELECTRICAL CONTRACTORS</p>
-        </div>
-      </section>
+      <div class="ev-light-caption"><span data-i18n="hero.caption">LIGHTING THE WORK AHEAD</span><b>02 / 03</b></div>
     </main>
 
     <footer class="ev-footer">
